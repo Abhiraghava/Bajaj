@@ -27,7 +27,7 @@ const BfhlFrontend = () => {
       setError('');
 
     
-      const res = await axios.post('http://localhost:3001/bfhl', parsedInput);
+      const res = await axios.post('https://bajaj-p3hl.onrender.com/bfhl', parsedInput);
       setResponse(res.data); 
     } catch (err) {
       setError('Invalid JSON input. Please enter a valid JSON.');
